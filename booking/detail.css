@@ -1,0 +1,149 @@
+/* Reset styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url("http://localhost/Responsipwd/booking/asset/bgmain1.jpg");
+
+}
+
+/* Header */
+header {
+    background: transparent;
+    color: #fff;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Membuat header tetap di atas */
+    top: 0; /* Posisi tetap di atas saat di-scroll */
+    z-index: 1000; /* Memastikan header berada di atas elemen lain */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animasi transisi halus */
+    font-weight: bold;  /* Membuat teks header menjadi tebal */
+    
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 130px;
+    height: auto;
+    margin-left: -110px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: -120px;
+}
+
+
+header nav ul li {
+    margin: 0 15px;
+    /* margin-top: 10px; */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    font-weight: bold;
+}
+
+header ul li a {
+    color: #0099ff;
+    text-align: center;
+    padding: 8px 16px 8px 16px;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Animasi transisi halus */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    color: inherit;  /* Menggunakan warna teks yang diwarisi (putih atau hitam tergantung keadaan) */
+    font-weight: bold;
+    
+
+   
+}
+
+header ul li a:hover {
+    background-color: #0099ff; /* Warna saat hover */
+    color: #fff; /* Warna teks tetap putih */
+    border-color: #0099ff; /* Ubah warna border sesuai latar */
+    transition: all 0.3s ease; /* Animasi transisi halus */
+    border-radius: 10px; /* Membuat sudut tombol melengkung */
+}
+
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0.9;
+    margin-top: 80px;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.button-group {
+    margin-top: 1.5rem;
+}
+
+.btn-order, .btn-cart {
+    display: inline-block;
+    background-color: #ff8c00;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-order:hover, .btn-cart:hover {
+    background-color: #e67e00;
+}
+
+/* Footer */
+footer {
+    background: #046dde;
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    text-size-adjust: 10px;
+    opacity: 0.9;
+    background: transparent;
+}
+

@@ -1,0 +1,91 @@
+/* File: style.css */
+
+/* Mengubah tampilan header */
+header {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Menyesuaikan form */
+.profile-form {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Efek hover pada tombol simpan */
+.btn-save {
+    background-color: #28a745;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-save:hover {
+    background-color: #218838;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Menambahkan spacing untuk form fields */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Menambah space di antara header dan konten */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+}
+
+/* Form fields padding dan border */
+input, select, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* File: style.css */
+
+/* Card Styling */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Button untuk Update */
+.btn-warning {
+    margin-top: 10px;
+}
+
+/* Form Styling */
+.profile-form {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}

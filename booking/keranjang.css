@@ -1,0 +1,221 @@
+/* Style untuk keseluruhan halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("http://localhost/Responsipwd/booking/asset/bgmain1.jpg");
+
+}
+
+/* Header */
+header {
+    background: transparent;
+    color: #fff;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Membuat header tetap di atas */
+    top: 0; /* Posisi tetap di atas saat di-scroll */
+    z-index: 1000; /* Memastikan header berada di atas elemen lain */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animasi transisi halus */
+    font-weight: bold;  /* Membuat teks header menjadi tebal */
+    
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 130px;
+    height: auto;
+    margin-left: -110px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: -120px;
+}
+
+
+header nav ul li {
+    margin: 0 15px;
+    /* margin-top: 10px; */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    font-weight: bold;
+}
+
+header ul li a {
+    color: #0099ff;
+    text-align: center;
+    padding: 8px 16px 8px 16px;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Animasi transisi halus */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    color: inherit;  /* Menggunakan warna teks yang diwarisi (putih atau hitam tergantung keadaan) */
+    font-weight: bold;
+    
+
+   
+}
+
+header ul li a:hover {
+    background-color: #0099ff; /* Warna saat hover */
+    color: #fff; /* Warna teks tetap putih */
+    border-color: #0099ff; /* Ubah warna border sesuai latar */
+    transition: all 0.3s ease; /* Animasi transisi halus */
+    border-radius: 10px; /* Membuat sudut tombol melengkung */
+}
+
+
+/* Cart Section */
+.cart-section {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+    opacity: 0.9;
+}
+
+.cart-section h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Table Styling */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table thead {
+    background-color: #f4f4f4;
+    text-transform: uppercase;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+}
+
+.cart-table tbody tr:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.quantity-controls a {
+    padding: 5px 10px;
+    background-color: #0099ff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-controls a:hover {
+    background-color: #006bb3;
+}
+
+/* Delete Button */
+.btn-icon.delete {
+    color: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn-icon.delete:hover {
+    transform: scale(1.2);
+}
+
+/* Total Section */
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cart-total p {
+    margin: 0;
+}
+
+.cart-total .btn-checkout {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-total .btn-checkout:hover {
+    background-color: #218838;
+}
+
+/* Empty Cart */
+.empty-cart {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
+}
+/* Footer */
+footer {
+    background: #046dde;
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    text-size-adjust: 10px;
+    opacity: 0.9;
+    background: transparent;
+    margin-top: 350px;
+}

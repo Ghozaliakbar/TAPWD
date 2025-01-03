@@ -1,0 +1,259 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url("http://localhost/Responsipwd/booking/asset/bgmain1.jpg");
+    background-size: cover; /* Membuat gambar memenuhi seluruh area header */
+}
+
+/* Header */
+header {
+    background: transparent;
+    color: #fff;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Membuat header tetap di atas */
+    top: 0; /* Posisi tetap di atas saat di-scroll */
+    z-index: 1000; /* Memastikan header berada di atas elemen lain */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animasi transisi halus */
+    font-weight: bold;  /* Membuat teks header menjadi tebal */
+    
+}
+
+/* Header sticky (ketika di-scroll) */
+header.sticky {
+    background-color: #fff;  /* Mengubah latar belakang menjadi putih */
+    color: #000;  /* Mengubah warna teks menjadi hitam */
+    opacity: 0.8;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 130px;
+    height: auto;
+    margin-left: -110px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: -120px;
+}
+
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: #FFF;
+    text-align: center;
+    padding: 8px 16px 8px 16px;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Animasi transisi halus */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    color: inherit;  /* Menggunakan warna teks yang diwarisi (putih atau hitam tergantung keadaan) */
+    
+
+   
+}
+
+header ul li a:hover {
+    background-color: #0099ff; /* Warna saat hover */
+    color: #fff; /* Warna teks tetap putih */
+    border-color: #0099ff; /* Ubah warna border sesuai latar */
+    transition: all 0.3s ease; /* Animasi transisi halus */
+    border-radius: 10px; /* Membuat sudut tombol melengkung */
+}
+
+.user-greeting {
+    font-size: 30px;
+    color: white;
+    margin-left: -600px;
+    line-height: 60px; /* Sesuaikan dengan tinggi header */
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Search Section */
+.search-section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.search-form .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.search-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.search-form input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.search-form .btn-search {
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.search-form .btn-search:hover {
+    background-color: #007acc;
+}
+
+.no-results {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+    margin-top: 2rem;
+}
+/* Tombol reset pencarian */
+.btn-reset {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 13px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reset:hover {
+    background-color: #d32f2f;
+}
+
+
+
+/* Packages Section */
+.packages-section {
+    padding: 2rem 1rem;
+}
+
+.packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.package-card {
+    background: #FFF;
+    opacity: 1.0; /*Transparansi 80% */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: justify;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-booking {
+    background: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-booking:hover {
+    background: #e67e22;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background: #046dde;
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    text-size-adjust: 10px;
+    opacity: 0.9;
+    background: transparent;
+}
